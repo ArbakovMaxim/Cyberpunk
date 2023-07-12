@@ -1,0 +1,13 @@
+.Logo {
+  width: 296px;
+  height: 74px;
+}
+
+.WrapperLogo {
+  top: 0;
+  position: absolute;
+}
+
+.WrapperHeader {
+  height: 1000px;
+}
