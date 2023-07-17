@@ -1,7 +1,7 @@
 export const Twitch = () => {
   return (
     <svg
-      width="29"
+      width="30"
       height="30"
       viewBox="0 0 29 30"
       fill="none"

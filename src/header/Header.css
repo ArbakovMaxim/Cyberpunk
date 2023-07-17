@@ -1,3 +1,16 @@
 .WrapperHeader {
   height: 1000px;
+  position: relative;
+}
+
+.WrapperSocialBlock {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1280px;
+  width: 100%;
 }
