@@ -1,5 +1,6 @@
 import { Promotion } from "../../image/svg/Promotion";
 import win from "../../image/win.png";
+import { ContactForm } from "../contactForm/ContactForm";
 import "../ui/uiStyled.css";
 import "./PlayAndWin.css";
 
@@ -20,7 +21,7 @@ export const PlayAndWin = () => {
           розыгрыша будут подведены 1 февраля. Удачи! ;)
         </p>
         <div className="wrapperFormAndWin">
-          <form></form>
+          <ContactForm />
           <img src={win} alt="призы"></img>
         </div>
       </div>
