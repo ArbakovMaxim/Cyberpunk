@@ -1,0 +1,43 @@
+.footer {
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textLicense {
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.textPrivacy {
+  margin-left: 32px;
+}
+
+.wrapperLicenseandPrivacyText {
+  display: flex;
+}
+
+.footerImg {
+  margin-right: 32px;
+}
+
+.footerText {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wrapperTextFooter {
+  padding: 13px 0;
+  background: #000;
+}

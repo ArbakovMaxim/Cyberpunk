@@ -73,7 +73,7 @@ export const ContactForm = () => {
           </div>
 
           <div>
-            <div className="wrapperFormName">
+            <div className="wrapperFormEmail">
               <label className="inputLabel" htmlFor="email">
                 Твой е-mail
               </label>
@@ -107,7 +107,8 @@ export const ContactForm = () => {
 
           <div className="inputLabelType">
             <label htmlFor="file" className="inputSkrin">
-              Прикрепить скриншот <br />
+              Прикрепить скриншот
+              <br />
               <span className="spanType">.png / .jpg / .pdf</span>
               <input
                 className="inputSkrin"
@@ -122,15 +123,21 @@ export const ContactForm = () => {
             </label>
           </div>
 
-          <div>
-            <label>
-              <Field type="checkbox" name="agreement" />
+          <button className="buttonSubmit" type="submit">
+            Отправить
+          </button>
+
+          <div className="checkboxWrapper">
+            <label className="fieldForm">
+              <input
+                type="checkbox"
+                id="agreement"
+                name="agreement"
+                className="customCheckbox"
+              />
               Согласен с условиями пользовательского соглашения
             </label>
-            <ErrorMessage name="agreement" component="div" />
           </div>
-
-          <button type="submit">Отправить</button>
         </Form>
       )}
     </Formik>

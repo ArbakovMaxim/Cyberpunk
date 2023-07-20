@@ -3,6 +3,11 @@
   margin-bottom: 20px;
 }
 
+.wrapperFormEmail {
+  position: relative;
+  margin-bottom: 35px;
+}
+
 .inputLabel {
   position: absolute;
   top: 50%;
@@ -43,6 +48,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  text-decoration-line: underline;
   width: 460px;
   height: 120px;
 }
@@ -53,9 +60,9 @@ input[type="file"] {
 
 .inputLabelType {
   text-align: center;
-  text-decoration-line: underline;
   width: 460px;
   height: 120px;
+  margin-bottom: 35px;
   border: 1px dashed #777;
   color: #fff;
   font-family: Roboto;
@@ -67,5 +74,44 @@ input[type="file"] {
 
 .spanType {
   font-size: 12px;
-  text-decoration-line: none;
+}
+
+.inputLabelType span {
+  text-decoration-line: none !important;
+}
+
+.buttonSubmit {
+  padding: 15px 50px;
+  align-items: center;
+  gap: 10px;
+  background: #f8f200;
+
+  margin-bottom: 15px;
+
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.fieldForm {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.fieldForm input[type="checkbox"] {
+  margin-right: 10px;
 }

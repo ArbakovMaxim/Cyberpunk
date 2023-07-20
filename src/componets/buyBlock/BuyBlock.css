@@ -1,0 +1,67 @@
+.wrapperBuyBlock {
+  display: flex;
+}
+
+.titleBuyBlock {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.textBuyBlock {
+  margin-top: 5px;
+  color: #52bedc;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sectionColorBuyBlock {
+  max-width: 976px;
+  width: 100%;
+  padding-left: 32px;
+  background: #000;
+}
+
+.textBuyBlockSvg {
+  margin-left: 10px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wrapperSvgBuyBlock {
+  align-items: center;
+  display: flex;
+  margin-top: 15px;
+}
+
+.titlePlatform {
+  margin: 75px 0 0 0;
+  color: #52bedc;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.svgBuyBlockPC {
+  margin-top: 25px;
+}
+
+.svgBuyBlockPS {
+  margin-top: 48px;
+}
+
+.spanSvgBuyBlock {
+  margin-left: 79px;
+}
