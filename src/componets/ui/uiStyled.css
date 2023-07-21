@@ -13,15 +13,14 @@
 }
 
 .section {
-  max-width: 1920px;
-  width: 100%;
+  width: 1920px;
   padding: 70px 0px;
 
   @media (max-width: 1919px) {
-    max-width: 1024px;
+    width: 1024px;
   }
 
   @media (max-width: 1023px) {
-    max-width: 320px;
+    width: 320px;
   }
 }
