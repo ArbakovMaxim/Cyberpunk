@@ -44,7 +44,7 @@ export const DescriptionNightCity = () => {
       <div className="container">
         <h2 className="title">Найт-Сити изменит тебя навсегда!</h2>
         <p className="textDescription">
-          <span className="textTypography">Cyberpunk 2077 —</span>
+          <span className="textTypography">Cyberpunk 2077 — </span>
           приключенческая ролевая игра, действие которой происходит в мегаполисе
           Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего.
           Ты играешь за V, наёмника в поисках устройства, позволяющего обрести
