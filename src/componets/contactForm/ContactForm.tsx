@@ -135,7 +135,7 @@ export const ContactForm = () => {
                 name="agreement"
                 className="customCheckbox"
               />
-              Согласен с условиями пользовательского соглашения
+              Согласен на обработку персональных данных
             </label>
           </div>
         </Form>

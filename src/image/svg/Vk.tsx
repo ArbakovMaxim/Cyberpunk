@@ -1,8 +1,19 @@
+import { useResize } from "../../hook/useResize";
+import { useEffect, useState } from "react";
+
 export const Vk = () => {
+  const { isScreenL } = useResize();
+  const [size, setSize] = useState("30");
+
+  useEffect(() => {
+    const svgSize = isScreenL ? "30" : "25";
+    setSize(svgSize);
+  }, [isScreenL]);
+
   return (
     <svg
-      width="30"
-      height="30"
+      width={size}
+      height={size}
       viewBox="0 0 30 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

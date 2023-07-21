@@ -1,8 +1,19 @@
+import { useResize } from "../../hook/useResize";
+import { useEffect, useState } from "react";
+
 export const Promotion = () => {
+  const { isScreenL } = useResize();
+  const [size, setSize] = useState("132");
+
+  useEffect(() => {
+    const svgSize = isScreenL ? "132" : "62";
+    setSize(svgSize);
+  }, [isScreenL]);
+
   return (
     <svg
-      width="132"
-      height="132"
+      width={size}
+      height={size}
       viewBox="0 0 132 132"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

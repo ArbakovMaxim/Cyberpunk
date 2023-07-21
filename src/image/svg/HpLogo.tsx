@@ -1,8 +1,19 @@
+import { useResize } from "../../hook/useResize";
+import { useEffect, useState } from "react";
+
 export const HpLogo = () => {
+  const { isScreenL } = useResize();
+  const [size, setSize] = useState("80");
+
+  useEffect(() => {
+    const svgSize = isScreenL ? "80" : "44";
+    setSize(svgSize);
+  }, [isScreenL]);
+
   return (
     <svg
-      width="80"
-      height="80"
+      width={size}
+      height={size}
       viewBox="0 0 80 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

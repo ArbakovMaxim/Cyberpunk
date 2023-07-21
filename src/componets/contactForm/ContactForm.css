@@ -37,6 +37,13 @@
   line-height: normal;
   border-bottom: 1px solid #777;
   background-color: transparent;
+
+  @media (max-width: 1023px) {
+    width: 296px;
+    font-size: 16px;
+    height: 35px;
+    padding-bottom: 5px;
+  }
 }
 
 .hidden {
@@ -52,6 +59,10 @@
   text-decoration-line: underline;
   width: 460px;
   height: 120px;
+
+  @media (max-width: 1023px) {
+    width: 296px;
+  }
 }
 
 input[type="file"] {
@@ -70,10 +81,17 @@ input[type="file"] {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+
+  @media (max-width: 1023px) {
+    width: 296px;
+  }
 }
 
 .spanType {
   font-size: 12px;
+  @media (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .inputLabelType span {

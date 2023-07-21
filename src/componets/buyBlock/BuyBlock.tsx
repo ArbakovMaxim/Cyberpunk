@@ -1,4 +1,8 @@
 import disk from "../../image/buyBlock.jpg";
+import disk_1024 from "../../image/buyBlock_1024.jpg";
+import disk_320 from "../../image/buyBlock_320.jpg";
+import { useResize } from "../../hook/useResize";
+import { useEffect, useState } from "react";
 import { Directory } from "../../image/svg/Directory";
 import { Disk } from "../../image/svg/Disk";
 import { PC } from "../../image/svg/PC";
@@ -10,9 +14,25 @@ import "../ui/uiStyled.css";
 import "./BuyBlock.css";
 
 export const BuyBlock = () => {
+  const { isScreenXl, isScreenL } = useResize();
+  const [srcDisk, setSrcDisk] = useState("");
+
+  useEffect(() => {
+    if (isScreenXl) {
+      const imgdisk = disk;
+      setSrcDisk(imgdisk);
+    } else if (isScreenL) {
+      const imgdisk = disk_1024;
+      setSrcDisk(imgdisk);
+    } else {
+      const imgdisk = disk_320;
+      setSrcDisk(imgdisk);
+    }
+  }, [isScreenXl, isScreenL]);
+
   return (
     <div className="wrapperBuyBlock">
-      <img src={disk} alt="" />
+      <img src={srcDisk} alt="" />
       <section className="section sectionColorBuyBlock">
         <h2 className="titleBuyBlock">
           Купить игру <br /> Cyberpunk 2077

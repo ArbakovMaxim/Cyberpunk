@@ -1,15 +1,28 @@
 import { Promotion } from "../../image/svg/Promotion";
 import win from "../../image/win.png";
+import win_1024 from "../../image/win_1024.png";
+import win_340 from "../../image/win_320.png";
 import { ContactForm } from "../contactForm/ContactForm";
+import { useResize } from "../../hook/useResize";
+import { useEffect, useState } from "react";
 import "../ui/uiStyled.css";
 import "./PlayAndWin.css";
 
 export const PlayAndWin = () => {
+  const { isScreenXl } = useResize();
+  const [srcWin, setSrcWin] = useState("");
+
+  useEffect(() => {
+    const imgDescription3 = isScreenXl ? win : win_1024;
+    setSrcWin(imgDescription3);
+  }, [isScreenXl]);
+
   return (
     <section className="section  sectionColor">
       <div className="container">
         <div className="wrapperPlay">
           <Promotion />
+          <img className="imgWin_340" src={win_340} alt="призы"></img>
           <h2 className="titlePlay">Играй и выигрывай!</h2>
         </div>
         <p className="textDescriptionPlay">
@@ -22,7 +35,7 @@ export const PlayAndWin = () => {
         </p>
         <div className="wrapperFormAndWin">
           <ContactForm />
-          <img src={win} alt="призы"></img>
+          <img className="imgWin" src={srcWin} alt="призы"></img>
         </div>
       </div>
     </section>

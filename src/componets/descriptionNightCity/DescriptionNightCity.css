@@ -7,15 +7,20 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 1919px) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 30px;
+    margin-bottom: 17px;
+  }
 }
 
 .textTypography {
   color: #52bedc;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 34px;
 }
 
 .textDescription {
@@ -27,6 +32,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
 }
 
 .WrapperText {
@@ -36,8 +46,44 @@
 .WrapperFoto {
   margin-top: 70px;
   display: flex;
+
+  @media (max-width: 1919px) {
+    display: block;
+  }
+  @media (max-width: 1023px) {
+    margin-left: -12px;
+  }
 }
 
 .img {
   margin-top: 32px;
+
+  @media (max-width: 1919px) {
+    margin-top: 0px;
+    margin-left: 32px;
+  }
+
+  @media (max-width: 1023px) {
+    margin-left: 0;
+    margin-top: 32px;
+  }
+}
+
+.img3 {
+  margin-top: 0px;
+
+  @media (max-width: 1919px) {
+    margin-top: 32px;
+  }
+}
+
+.wrapperImgDescription {
+  display: block;
+  @media (max-width: 1919px) {
+    display: flex;
+  }
+
+  @media (max-width: 1023px) {
+    display: block;
+  }
 }

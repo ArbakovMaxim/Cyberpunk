@@ -1,5 +1,16 @@
 .wrapperBuyBlock {
+  max-width: 1920px;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  @media (max-width: 1919px) {
+    max-width: 1024px;
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 320px;
+    display: block;
+  }
 }
 
 .titleBuyBlock {
@@ -9,6 +20,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 1023px) {
+    margin-top: 40px;
+    font-size: 30px;
+  }
 }
 
 .textBuyBlock {
@@ -19,13 +35,26 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media (max-width: 1023px) {
+    font-size: 20px;
+    margin-top: 17px;
+  }
 }
 
 .sectionColorBuyBlock {
-  max-width: 976px;
+  max-width: 944px;
   width: 100%;
   padding-left: 32px;
   background: #000;
+  margin-top: 0;
+
+  @media (max-width: 1023px) {
+    max-width: 296px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: -4px;
+  }
 }
 
 .textBuyBlockSvg {
@@ -36,12 +65,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 1023px) {
+    margin-left: 18px;
+    font-size: 16px;
+  }
 }
 
 .wrapperSvgBuyBlock {
   align-items: center;
   display: flex;
   margin-top: 15px;
+
+  @media (max-width: 1023px) {
+    margin-top: 18px;
+  }
 }
 
 .titlePlatform {
@@ -52,16 +90,38 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+
+  @media (max-width: 1023px) {
+    font-size: 20px;
+    margin-top: 40px;
+  }
 }
 
 .svgBuyBlockPC {
   margin-top: 25px;
+
+  @media (max-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .svgBuyBlockPS {
   margin-top: 48px;
+
+  @media (max-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+  }
 }
 
 .spanSvgBuyBlock {
   margin-left: 79px;
+
+  @media (max-width: 1023px) {
+    margin-left: 0;
+  }
 }

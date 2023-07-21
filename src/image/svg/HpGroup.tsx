@@ -1,8 +1,22 @@
+import { useResize } from "../../hook/useResize";
+import { useEffect, useState } from "react";
+
 export const HpGroup = () => {
+  const { isScreenL } = useResize();
+  const [sizeW, setSizeW] = useState("92");
+  const [sizeH, setSizeH] = useState("21");
+
+  useEffect(() => {
+    const svgSizeW = isScreenL ? "92" : "49";
+    setSizeW(svgSizeW);
+    const svgSizeH = isScreenL ? "21" : "10";
+    setSizeH(svgSizeH);
+  }, [isScreenL]);
+
   return (
     <svg
-      width="92"
-      height="21"
+      width={sizeW}
+      height={sizeH}
       viewBox="0 0 92 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

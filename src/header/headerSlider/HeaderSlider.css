@@ -5,6 +5,17 @@
   background-size: "cover";
   background-repeat: "no-repeat";
   background-position: "center";
+
+  @media (max-width: 1919px) {
+    max-width: 1024px;
+    background-image: url(../../image/hero1_1024.png);
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 320px;
+    height: 713px;
+    background-image: url(../../image/hero1_320.png);
+  }
 }
 
 .Slider2 {
@@ -14,6 +25,17 @@
   background-size: "cover";
   background-repeat: "no-repeat";
   background-position: "center";
+
+  @media (max-width: 1919px) {
+    max-width: 1024px;
+    background-image: url(../../image/hero2_1024.png);
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 320px;
+    height: 713px;
+    background-image: url(../../image/hero2_320.png);
+  }
 }
 
 .Slider3 {
@@ -23,4 +45,15 @@
   background-size: "cover";
   background-repeat: "no-repeat";
   background-position: "center";
+
+  @media (max-width: 1919px) {
+    max-width: 1024px;
+    background-image: url(../../image/hero3_1024.png);
+  }
+
+  @media (max-width: 1023px) {
+    max-width: 320px;
+    height: 713px;
+    background-image: url(../../image/hero3_320.png);
+  }
 }

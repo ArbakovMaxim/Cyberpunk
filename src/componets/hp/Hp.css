@@ -9,6 +9,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 1919px) {
+    width: 320px;
+    height: 229px;
+    flex-direction: column;
+  }
+
+  @media (max-width: 1023px) {
+    width: 296px;
+    height: 50px;
+    flex-direction: row;
+  }
 }
 
 .wrapperBlockHp {
@@ -16,6 +28,11 @@
   flex-direction: column;
   align-items: center;
   width: 625px;
+
+  @media (max-width: 1023px) {
+    width: 296px;
+    display: block;
+  }
 }
 
 .titleHP {
@@ -25,6 +42,11 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 1023px) {
+    margin-top: 40px;
+    font-size: 30px;
+  }
 }
 
 .textHp {
@@ -34,14 +56,28 @@
   font-style: normal;
   font-weight: 400;
   line-height: 34px;
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 17px;
+  }
 }
 
 .wrapperHPBlock {
   display: flex;
+
+  @media (max-width: 1023px) {
+    display: block;
+  }
 }
 
 .wrapperHPText {
   margin-left: 32px;
+
+  @media (max-width: 1023px) {
+    margin-left: 0;
+  }
 }
 
 .wrapperColorBlock {
@@ -58,6 +94,11 @@
   font-weight: 400;
   line-height: normal;
   margin-left: 10px;
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+    margin-left: 18px;
+  }
 }
 
 .wrapperSvgBlock {

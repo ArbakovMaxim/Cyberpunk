@@ -3,4 +3,8 @@
   list-style-type: none;
   width: 379px;
   justify-content: space-between;
+
+  @media (max-width: 1023px) {
+    max-width: 296px;
+  }
 }

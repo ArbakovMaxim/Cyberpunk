@@ -8,6 +8,19 @@
   background-color: #f8f200;
   padding: 70px;
   clip-path: polygon(10% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%, 0% 10%);
+
+  @media (max-width: 1919px) {
+    left: 36%;
+  }
+
+  @media (max-width: 1023px) {
+    width: 295px;
+    height: 147px;
+    padding: 30px 12.5px;
+    left: 0;
+    text-align: center;
+    bottom: -3%;
+  }
 }
 
 .Text {
@@ -18,6 +31,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (max-width: 1023px) {
+    font-size: 30px;
+  }
 }
 
 .Button {
@@ -32,4 +49,10 @@
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
+
+  @media (max-width: 1023px) {
+    margin-top: 17px;
+    font-size: 20px;
+    padding: 10px 50px;
+  }
 }
