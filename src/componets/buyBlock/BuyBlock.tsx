@@ -35,7 +35,8 @@ export const BuyBlock = () => {
       <img src={srcDisk} alt="" />
       <section className="section sectionColorBuyBlock">
         <h2 className="titleBuyBlock">
-          Купить игру <br /> Cyberpunk 2077
+          Купить игру <br />
+          Cyberpunk 2077
         </h2>
         <p className="textBuyBlock">В комплект входит:</p>
         <div className="wrapperSvgBuyBlock">
