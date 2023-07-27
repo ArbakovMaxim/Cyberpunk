@@ -2,9 +2,9 @@
   max-width: 1920px;
   height: 1000px;
   background-image: url(../../image/hero1.png);
-  background-size: "cover";
-  background-repeat: "no-repeat";
-  background-position: "center";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (max-width: 1919px) {
     max-width: 1024px;
@@ -22,9 +22,9 @@
   max-width: 1920px;
   height: 1000px;
   background-image: url(../../image/hero2.png);
-  background-size: "cover";
-  background-repeat: "no-repeat";
-  background-position: "center";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (max-width: 1919px) {
     max-width: 1024px;
@@ -42,9 +42,9 @@
   max-width: 1920px;
   height: 1000px;
   background-image: url(../../image/hero3.png);
-  background-size: "cover";
-  background-repeat: "no-repeat";
-  background-position: "center";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (max-width: 1919px) {
     max-width: 1024px;
