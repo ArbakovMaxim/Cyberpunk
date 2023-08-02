@@ -57,3 +57,11 @@
     background-image: url(../../image/hero3_320.png);
   }
 }
+
+.Slider1,
+.Slider2 {
+  @media (max-width: 1023px) {
+    max-width: 320px;
+    height: 713px;
+  }
+}
